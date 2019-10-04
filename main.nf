@@ -249,7 +249,7 @@ process fastqc {
 
     script:
     """
-    fastqc -t {task.cpus} -q ${fq1} ${fq2}
+    fastqc -t ${task.cpus} -q ${fq1} ${fq2}
     """
 }
 
